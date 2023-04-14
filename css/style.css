@@ -194,6 +194,7 @@ footer{
     #showcase p,
     #boxes .box,
     #main-col,
+    #main-col .page-title,
     #sidebar
     {
         float: none;
@@ -203,10 +204,14 @@ footer{
         padding: 5px;
     }
 
-
-    #showcase h2{
-        margin: 20px;
+    #showcase h2, p{
+        margin: auto;
         line-height: 1em;
+    }
+
+    #boxes .box p{
+        margin: auto;
+        margin-left: -10px;
     }
 
     #newsletter form{
@@ -217,5 +222,26 @@ footer{
         display: block;
         margin: auto;
         margin-bottom: 20px;
+    }
+
+    #main-col{
+        width: 96vw;
+        text-align: center;
+        margin: auto;
+    }
+
+    #main-col #services{
+        margin: auto;
+        margin-left: -40px;
+    }
+
+    .dark{
+        width: 70vw;
+        text-align: center;
+        margin: auto;
+    }
+    .quote input{
+        display: block;
+        margin: auto;
     }
 }
