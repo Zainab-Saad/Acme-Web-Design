@@ -7,12 +7,22 @@ body{
     line-height: 1em;
     margin: 0;
     width: 100%;
+    min-height: 100vh;
     
 }
 .container{
     width: 100%;
     margin: auto;
     overflow: hidden;
+}
+
+.dark{
+    background-color: #A38F85;  
+    background-color: #854d47;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 header{
@@ -84,7 +94,7 @@ nav li{
 #newsletter h3{
     float: left;
     margin: 0;
-    padding-left: 80px;
+    padding-left: 65px;
 }
 
 #newsletter form{
@@ -117,6 +127,43 @@ nav li{
     text-align: center;
 }
 
+/* about page --------------------------- */
+
+#main-col{
+    float: left;
+    padding-left: 30px;
+    width: 60%;
+    padding: 30px;
+    text-overflow: ellipsis;
+}
+#sidebar{
+    float: right;
+    width: 25%;
+    padding-right: 30px;
+}
+/* end abput page ----------------------- */
+
+/* services page ------------------------ */
+
+ul#services li{
+    list-style: none;
+    background-color: #854d47;
+    border: #DDD0C8 solid 1.5px;
+    padding: 20px;
+}
+
+.page-title{
+    padding-left: 45px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+/* end services page -------------------- */
+
+
 footer{
     background-color: #808080;
     border-top: black solid 2px;
@@ -125,6 +172,12 @@ footer{
     margin: auto;
     text-align: center;
     width: 100%;
+}
+
+#about-footer{
+    height: 8vh;
+    position: sticky;
+    top: 100%;
 }
 
 /* media queries */
@@ -139,7 +192,9 @@ footer{
     #button-1,
     #showcase h2,
     #showcase p,
-    #boxes .box
+    #boxes .box,
+    #main-col,
+    #sidebar
     {
         float: none;
         text-align: center;
@@ -147,6 +202,7 @@ footer{
         margin: 2px;
         padding: 5px;
     }
+
 
     #showcase h2{
         margin: 20px;
